@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="Doe.png">
+<SubTexture name="Doe idleAnim0000" x="1620" y="0" width="697" height="1061" frameX="-642" frameY="-189" frameWidth="1920" frameHeight="1255" />
+<SubTexture name="Doe idleAnim0001" x="1620" y="0" width="697" height="1061" frameX="-642" frameY="-189" frameWidth="1920" frameHeight="1255" />
+<SubTexture name="Doe idleAnim0002" x="3298" y="0" width="658" height="1050" frameX="-666" frameY="-200" frameWidth="1920" frameHeight="1255" />
+<SubTexture name="Doe idleAnim0003" x="1620" y="0" width="697" height="1061" frameX="-642" frameY="-189" frameWidth="1920" frameHeight="1255" />
+<SubTexture name="Doe idleAnim0004" x="1620" y="0" width="697" height="1061" frameX="-642" frameY="-189" frameWidth="1920" frameHeight="1255" />
+<SubTexture name="Doe idleAnim0005" x="3298" y="1050" width="658" height="1050" frameX="-666" frameY="-200" frameWidth="1920" frameHeight="1255" />
+<SubTexture name="Doe idleAnim0006" x="1620" y="0" width="697" height="1061" frameX="-642" frameY="-189" frameWidth="1920" frameHeight="1255" />
+<SubTexture name="Doe idleAnim0007" x="1620" y="0" width="697" height="1061" frameX="-642" frameY="-189" frameWidth="1920" frameHeight="1255" />
+<SubTexture name="Doe leftPose0000" x="0" y="1101" width="947" height="1059" frameX="-311" frameY="-191" frameWidth="1920" frameHeight="1255" />
+<SubTexture name="Doe leftPose0001" x="2317" y="0" width="981" height="1055" frameX="-325" frameY="-195" frameWidth="1920" frameHeight="1255" />
+<SubTexture name="Doe leftPose0002" x="2317" y="1055" width="961" height="1055" frameX="-345" frameY="-195" frameWidth="1920" frameHeight="1255" />
+<SubTexture name="Doe leftPose0003" x="0" y="2160" width="1137" height="1055" frameX="-169" frameY="-195" frameWidth="1920" frameHeight="1255" />
+<SubTexture name="Doe leftPose0004" x="1137" y="2160" width="777" height="1055" frameX="-529" frameY="-195" frameWidth="1920" frameHeight="1255" />
+<SubTexture name="Doe downPose0000" x="3956" y="1021" width="646" height="999" frameX="-706" frameY="-251" frameWidth="1920" frameHeight="1255" />
+<SubTexture name="Doe downPose0001" x="3956" y="0" width="668" height="1021" frameX="-687" frameY="-229" frameWidth="1920" frameHeight="1255" />
+<SubTexture name="Doe upPose0000" x="0" y="0" width="791" height="1101" frameX="-567" frameY="-149" frameWidth="1920" frameHeight="1255" />
+<SubTexture name="Doe upPose0001" x="791" y="0" width="829" height="1079" frameX="-532" frameY="-171" frameWidth="1920" frameHeight="1255" />
+<SubTexture name="Doe rightPose0000" x="1914" y="2160" width="861" height="1054" frameX="-594" frameY="-196" frameWidth="1920" frameHeight="1255" />
+<SubTexture name="Doe rightPose0001" x="947" y="1101" width="872" height="1059" frameX="-539" frameY="-191" frameWidth="1920" frameHeight="1255" />
+</TextureAtlas>

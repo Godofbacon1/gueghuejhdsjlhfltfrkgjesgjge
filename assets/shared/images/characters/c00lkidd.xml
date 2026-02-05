@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="C00lKIDD.png">
+<SubTexture name="C00lKIDD idleDance0000" x="2417" y="1062" width="579" height="1055" frameX="-682" frameY="-198" frameWidth="1920" frameHeight="1255" />
+<SubTexture name="C00lKIDD idleDance0001" x="1755" y="1086" width="573" height="1062" frameX="-681" frameY="-191" frameWidth="1920" frameHeight="1255" />
+<SubTexture name="C00lKIDD idleDance0002" x="1193" y="0" width="590" height="1075" frameX="-683" frameY="-178" frameWidth="1920" frameHeight="1255" />
+<SubTexture name="C00lKIDD idleDance0003" x="601" y="0" width="592" height="1081" frameX="-683" frameY="-172" frameWidth="1920" frameHeight="1255" />
+<SubTexture name="C00lKIDD idleDance0004" x="0" y="0" width="601" height="1086" frameX="-684" frameY="-167" frameWidth="1920" frameHeight="1255" />
+<SubTexture name="C00lKIDD leftPose0000" x="2417" y="0" width="1159" height="1062" frameX="-89" frameY="-186" frameWidth="1920" frameHeight="1255" />
+<SubTexture name="C00lKIDD leftPose0001" x="0" y="1086" width="1127" height="1065" frameX="-137" frameY="-190" frameWidth="1920" frameHeight="1255" />
+<SubTexture name="C00lKIDD leftPose0002" x="0" y="1086" width="1127" height="1065" frameX="-137" frameY="-190" frameWidth="1920" frameHeight="1255" />
+<SubTexture name="C00lKIDD downPose0000" x="2555" y="2151" width="631" height="981" frameX="-659" frameY="-273" frameWidth="1920" frameHeight="1255" />
+<SubTexture name="C00lKIDD downPose0001" x="1938" y="2151" width="617" height="996" frameX="-676" frameY="-258" frameWidth="1920" frameHeight="1255" />
+<SubTexture name="C00lKIDD downPose0002" x="1938" y="2151" width="617" height="996" frameX="-676" frameY="-258" frameWidth="1920" frameHeight="1255" />
+<SubTexture name="C00lKIDD upPose0000" x="1127" y="1086" width="628" height="1065" frameX="-635" frameY="-189" frameWidth="1920" frameHeight="1255" />
+<SubTexture name="C00lKIDD upPose0001" x="1783" y="0" width="634" height="1072" frameX="-621" frameY="-182" frameWidth="1920" frameHeight="1255" />
+<SubTexture name="C00lKIDD upPose0002" x="1783" y="0" width="634" height="1072" frameX="-621" frameY="-182" frameWidth="1920" frameHeight="1255" />
+<SubTexture name="C00lKIDD rightPose0000" x="0" y="2151" width="961" height="1053" frameX="-708" frameY="-196" frameWidth="1920" frameHeight="1255" />
+<SubTexture name="C00lKIDD rightPose0001" x="961" y="2151" width="977" height="1043" frameX="-652" frameY="-209" frameWidth="1920" frameHeight="1255" />
+<SubTexture name="C00lKIDD rightPose0002" x="961" y="2151" width="977" height="1043" frameX="-652" frameY="-209" frameWidth="1920" frameHeight="1255" />
+</TextureAtlas>

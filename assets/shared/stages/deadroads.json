@@ -1,0 +1,108 @@
+{
+	"camera_boyfriend": [
+		50,
+		0
+	],
+	"_editorMeta": {
+		"boyfriend": "boy",
+		"gf": "girl",
+		"dad": "john doe2"
+	},
+	"preload": {
+		"images/stage_light": 2,
+		"images/stagecurtains": 2,
+		"images/stagefront": 3,
+		"images/stageback": 3
+	},
+	"girlfriend": [
+		732,
+		222
+	],
+	"stageUI": "",
+	"boyfriend": [
+		1403,
+		219
+	],
+	"defaultZoom": 0.72,
+	"objects": [
+		{
+			"x": -213,
+			"y": -177,
+			"scale": [
+				2,
+				1.95
+			],
+			"image": "Deadroads",
+			"flipX": false,
+			"filters": 3,
+			"color": "FFFFFF",
+			"angle": 0,
+			"name": "Deadroads",
+			"antialiasing": true,
+			"flipY": false,
+			"scroll": [
+				1,
+				1
+			],
+			"alpha": 1,
+			"type": "sprite"
+		},
+		{
+			"x": 901,
+			"y": 434,
+			"scale": [
+				0.5,
+				0.5
+			],
+			"image": "characters/insane c00lkidd",
+			"flipX": true,
+			"filters": 3,
+			"color": "FFFFFF",
+			"angle": 320,
+			"name": "c00lkidd",
+			"firstAnimation": "idle",
+			"antialiasing": true,
+			"flipY": false,
+			"scroll": [
+				1,
+				1
+			],
+			"alpha": 1,
+			"animations": [
+				{
+					"offsets": null,
+					"loop": true,
+					"fps": 16,
+					"anim": "idle",
+					"indices": [],
+					"name": "insane c00lkidd idle"
+				}
+			],
+			"type": "animatedSprite"
+		},
+		{
+			"type": "gf"
+		},
+		{
+			"type": "dad"
+		},
+		{
+			"type": "boyfriend"
+		}
+	],
+	"camera_girlfriend": [
+		0,
+		0
+	],
+	"camera_speed": 1,
+	"directory": "weekdoe",
+	"opponent": [
+		373,
+		195
+	],
+	"camera_opponent": [
+		0,
+		0
+	],
+	"hide_girlfriend": false
+}

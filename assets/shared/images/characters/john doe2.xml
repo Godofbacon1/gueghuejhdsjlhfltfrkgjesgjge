@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="john doe2.png">
+<SubTexture name="john doe2 right0000" x="0" y="673" width="867" height="670" frameX="0" frameY="0" frameWidth="867" frameHeight="670" />
+<SubTexture name="john doe2 right0001" x="1624" y="0" width="867" height="670" frameX="0" frameY="0" frameWidth="867" frameHeight="670" />
+<SubTexture name="john doe2 right0002" x="1624" y="670" width="867" height="670" frameX="0" frameY="0" frameWidth="867" frameHeight="670" />
+<SubTexture name="john doe2 right0003" x="0" y="1343" width="867" height="670" frameX="0" frameY="0" frameWidth="867" frameHeight="670" />
+<SubTexture name="john doe2 right0004" x="867" y="1343" width="867" height="670" frameX="0" frameY="0" frameWidth="867" frameHeight="670" />
+<SubTexture name="john doe2 right0005" x="2491" y="0" width="867" height="670" frameX="0" frameY="0" frameWidth="867" frameHeight="670" />
+<SubTexture name="john doe2 up0000" x="0" y="0" width="812" height="673" frameX="0" frameY="0" frameWidth="812" frameHeight="673" />
+<SubTexture name="john doe2 up0001" x="812" y="0" width="812" height="673" frameX="0" frameY="0" frameWidth="812" frameHeight="673" />
+<SubTexture name="john doe2 up0002" x="2491" y="670" width="812" height="670" frameX="0" frameY="0" frameWidth="812" frameHeight="670" />
+<SubTexture name="john doe2 up0003" x="2491" y="1340" width="812" height="670" frameX="0" frameY="0" frameWidth="812" frameHeight="670" />
+<SubTexture name="john doe2 up0004" x="0" y="2013" width="812" height="670" frameX="0" frameY="0" frameWidth="812" frameHeight="670" />
+<SubTexture name="john doe2 up0005" x="812" y="2013" width="812" height="670" frameX="0" frameY="0" frameWidth="812" frameHeight="670" />
+<SubTexture name="john doe2 down0000" x="1624" y="2013" width="812" height="670" frameX="0" frameY="0" frameWidth="812" frameHeight="670" />
+<SubTexture name="john doe2 down0001" x="2436" y="2013" width="812" height="670" frameX="0" frameY="0" frameWidth="812" frameHeight="670" />
+<SubTexture name="john doe2 down0002" x="0" y="2683" width="812" height="670" frameX="0" frameY="0" frameWidth="812" frameHeight="670" />
+<SubTexture name="john doe2 down0003" x="812" y="2683" width="812" height="670" frameX="0" frameY="0" frameWidth="812" frameHeight="670" />
+<SubTexture name="john doe2 down0004" x="1624" y="2683" width="812" height="670" frameX="0" frameY="0" frameWidth="812" frameHeight="670" />
+<SubTexture name="john doe2 down0005" x="2436" y="2683" width="812" height="670" frameX="0" frameY="0" frameWidth="812" frameHeight="670" />
+<SubTexture name="john doe2 left0000" x="3358" y="0" width="812" height="670" frameX="0" frameY="0" frameWidth="812" frameHeight="670" />
+<SubTexture name="john doe2 left0001" x="3358" y="670" width="812" height="670" frameX="0" frameY="0" frameWidth="812" frameHeight="670" />
+<SubTexture name="john doe2 left0002" x="3358" y="1340" width="812" height="670" frameX="0" frameY="0" frameWidth="812" frameHeight="670" />
+<SubTexture name="john doe2 left0003" x="3358" y="2010" width="812" height="670" frameX="0" frameY="0" frameWidth="812" frameHeight="670" />
+<SubTexture name="john doe2 left0004" x="3358" y="2680" width="812" height="670" frameX="0" frameY="0" frameWidth="812" frameHeight="670" />
+<SubTexture name="john doe2 left0005" x="0" y="3353" width="812" height="670" frameX="0" frameY="0" frameWidth="812" frameHeight="670" />
+<SubTexture name="john doe2 left0006" x="812" y="3353" width="812" height="670" frameX="0" frameY="0" frameWidth="812" frameHeight="670" />
+<SubTexture name="john doe2 left0007" x="1624" y="3353" width="812" height="670" frameX="0" frameY="0" frameWidth="812" frameHeight="670" />
+<SubTexture name="john doe2 left0008" x="2436" y="3353" width="812" height="670" frameX="0" frameY="0" frameWidth="812" frameHeight="670" />
+<SubTexture name="john doe2 left0009" x="3248" y="3353" width="812" height="670" frameX="0" frameY="0" frameWidth="812" frameHeight="670" />
+<SubTexture name="john doe2 idle0000" x="4170" y="0" width="812" height="670" frameX="0" frameY="0" frameWidth="812" frameHeight="670" />
+<SubTexture name="john doe2 idle0001" x="4170" y="670" width="812" height="670" frameX="0" frameY="0" frameWidth="812" frameHeight="670" />
+<SubTexture name="john doe2 idle0002" x="4170" y="1340" width="812" height="670" frameX="0" frameY="0" frameWidth="812" frameHeight="670" />
+<SubTexture name="john doe2 idle0003" x="4170" y="2010" width="812" height="670" frameX="0" frameY="0" frameWidth="812" frameHeight="670" />
+<SubTexture name="john doe2 idle0004" x="4170" y="2680" width="812" height="670" frameX="0" frameY="0" frameWidth="812" frameHeight="670" />
+<SubTexture name="john doe2 idle0005" x="4170" y="3350" width="812" height="670" frameX="0" frameY="0" frameWidth="812" frameHeight="670" />
+<SubTexture name="john doe2 idle0006" x="0" y="4023" width="812" height="670" frameX="0" frameY="0" frameWidth="812" frameHeight="670" />
+<SubTexture name="john doe2 idle0007" x="4170" y="3350" width="812" height="670" frameX="0" frameY="0" frameWidth="812" frameHeight="670" />
+<SubTexture name="john doe2 idle0008" x="4170" y="2680" width="812" height="670" frameX="0" frameY="0" frameWidth="812" frameHeight="670" />
+<SubTexture name="john doe2 idle0009" x="4170" y="2010" width="812" height="670" frameX="0" frameY="0" frameWidth="812" frameHeight="670" />
+<SubTexture name="john doe2 idle0010" x="4170" y="1340" width="812" height="670" frameX="0" frameY="0" frameWidth="812" frameHeight="670" />
+<SubTexture name="john doe2 idle0011" x="812" y="4023" width="812" height="670" frameX="0" frameY="0" frameWidth="812" frameHeight="670" />
+<SubTexture name="john doe2 idle0012" x="4170" y="670" width="812" height="670" frameX="0" frameY="0" frameWidth="812" frameHeight="670" />
+</TextureAtlas>
