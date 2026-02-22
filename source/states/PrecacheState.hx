@@ -35,6 +35,10 @@ class PrecatchState extends MusicBeatState
         add(text);
         var calmway:Sound = Paths.music('snowfall');
 
+        FlxTween.tween(text, {alpha: 0}, 2, {ease:FlxEase.sineInOut, type:PINGPONG});
+
+        FlxG.mouse.visible = false;
+
         FlxG.sound.playMusic(calmway);
 
         var Speed:Float = FlxG.random.float(0.25, 1);

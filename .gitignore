@@ -9,7 +9,7 @@ art/buildScripts/test_x64-debug-officialrelease.bat
 export/*
 .vscode/*
 .haxelib/
-.github/
+.github/ISSUE_TEMPLATE
 *.code-workspace
 vs_Community.exe
 # Local history which shouldn't be shared.
@@ -24,6 +24,5 @@ vs_Community.exe
 !.vscode/launch.json
 !.vscode/extensions.json
 #Extra shit
-art/*
 concepts/*
 items/*

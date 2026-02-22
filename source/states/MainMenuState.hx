@@ -21,7 +21,7 @@ class MainMenuState extends MusicBeatState
 	private static var ModVersion:String = 'Demo';
 	public static var curSelected:Int = 0;
 	public static var curColumn:MainMenuColumn = CENTER;
-	var allowMouse:Bool = false; //Turn this off to block mouse movement in menus
+	var allowMouse:Bool = true; //Turn this off to block mouse movement in menus
 
 	var menuItems:FlxTypedGroup<FlxSprite>;
 	var leftItem:FlxSprite;
@@ -248,6 +248,10 @@ class MainMenuState extends MusicBeatState
 			FlxG.sound.play(Paths.sound('cancelMenu'));
 			MusicBeatState.switchState(new TitleState());
 		}
+
+		if (FlxG.mouse.x > (FlxG.width / 2)) MenuCharSprite.flipX = false; else MenuCharSprite.flipX = true;
+
+		if (FlxG.mouse.cursor.bitmapData.compare(Paths.image("RobloxCursor").bitmap) < 0) FlxG.mouse.load(Paths.image("RobloxCursor").bitmap);
 
 		//Debug Shit
 		#if (!final)
