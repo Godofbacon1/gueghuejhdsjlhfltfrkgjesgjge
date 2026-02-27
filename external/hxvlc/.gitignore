@@ -1,0 +1,5 @@
+.DS_Store
+docs/doc.xml
+pages
+samples/*/export
+.github/
