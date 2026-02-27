@@ -1,0 +1,69 @@
+{
+	"camera_boyfriend": [
+		50,
+		-100
+	],
+	"_editorMeta": {
+		"boyfriend": "boy",
+		"gf": "girl",
+		"dad": "c00lkidd"
+	},
+	"girlfriend": [
+		-137,
+		812
+	],
+	"stageUI": "normal",
+	"boyfriend": [
+		467,
+		840
+	],
+	"defaultZoom": 0.55,
+	"objects": [
+		{
+			"x": -1460,
+			"y": 41,
+			"scale": [
+				2.5,
+				2.5
+			],
+			"image": "C00lCarnival",
+			"flipX": false,
+			"filters": 3,
+			"color": "FFFFFF",
+			"angle": 0,
+			"name": "C00lCarnival",
+			"antialiasing": true,
+			"flipY": false,
+			"scroll": [
+				1,
+				1
+			],
+			"alpha": 1,
+			"type": "sprite"
+		},
+		{
+			"type": "gf"
+		},
+		{
+			"type": "dad"
+		},
+		{
+			"type": "boyfriend"
+		}
+	],
+	"camera_girlfriend": [
+		0,
+		-100
+	],
+	"opponent": [
+		-453,
+		806
+	],
+	"directory": "c00lweek",
+	"camera_speed": 1,
+	"hide_girlfriend": false,
+	"camera_opponent": [
+		-50,
+		-55
+	]
+}

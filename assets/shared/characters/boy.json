@@ -1,0 +1,111 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [-83, -53],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "boy down",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [-82, -52],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "boy up",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [-80, -55],
+			"anim": "singDOWNmiss",
+			"fps": 24,
+			"name": "boy down",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [-86, -57],
+			"anim": "singUPmiss",
+			"fps": 24,
+			"name": "boy up",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [-21, -11],
+			"anim": "hey",
+			"fps": 24,
+			"name": "boy hey",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [28, 0],
+			"anim": "hurt",
+			"fps": 24,
+			"name": "boy slashed",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [-57, 7],
+			"anim": "dodge",
+			"fps": 24,
+			"name": "boy dodge",
+			"indices": []
+		},
+		{
+			"offsets": [-84, -61],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "boy left"
+		},
+		{
+			"offsets": [-85, -63],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "boy right"
+		},
+		{
+			"offsets": [-85, -50],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFTmiss",
+			"indices": [],
+			"name": "boy left"
+		},
+		{
+			"offsets": [-80, -68],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHTmiss",
+			"indices": [],
+			"name": "boy right"
+		},
+		{
+			"loop": false,
+			"offsets": [-5, 0],
+			"anim": "idle",
+			"fps": 24,
+			"name": "boy idle",
+			"indices": []
+		}
+	],
+	"vocals_file": "",
+	"no_antialiasing": false,
+	"image": "characters/boy",
+	"position": [-220, 100],
+	"healthicon": "boy",
+	"flip_x": false,
+	"healthbar_colors": [49, 176, 209],
+	"camera_position": [10, 80],
+	"sing_duration": 4,
+	"scale": 1,
+	"_editor_isPlayer": true
+}

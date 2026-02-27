@@ -1,0 +1,55 @@
+{
+	"animations": [
+		{
+			"offsets": [545, 377],
+			"indices": [],
+			"fps": 24,
+			"anim": "idle",
+			"loop": false,
+			"name": "C00lKIDD idleDance"
+		},
+		{
+			"offsets": [535, 374],
+			"indices": [],
+			"fps": 24,
+			"anim": "singLEFT",
+			"loop": false,
+			"name": "C00lKIDD leftPose"
+		},
+		{
+			"offsets": [526, 375],
+			"indices": [],
+			"fps": 24,
+			"anim": "singUP",
+			"loop": false,
+			"name": "C00lKIDD upPose"
+		},
+		{
+			"offsets": [529, 369],
+			"indices": [],
+			"fps": 24,
+			"anim": "singDOWN",
+			"loop": false,
+			"name": "C00lKIDD downPose"
+		},
+		{
+			"offsets": [540, 369],
+			"indices": [],
+			"fps": 24,
+			"anim": "singRIGHT",
+			"loop": false,
+			"name": "C00lKIDD rightPose"
+		}
+	],
+	"vocals_file": "",
+	"no_antialiasing": false,
+	"image": "characters/c00lkidd",
+	"position": [-200, 260],
+	"healthicon": "c00lkidd",
+	"flip_x": false,
+	"healthbar_colors": [231, 0, 0],
+	"camera_position": [0, 0],
+	"sing_duration": 6.1,
+	"scale": 0.4,
+	"_editor_isPlayer": false
+}

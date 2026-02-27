@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="insane_c00lkidd.png">
+<SubTexture name="insane c00lkidd idle0000" x="1456" y="637" width="629" height="635" frameX="0" frameY="0" frameWidth="629" frameHeight="635" />
+<SubTexture name="insane c00lkidd idle0001" x="0" y="1274" width="629" height="635" frameX="0" frameY="0" frameWidth="629" frameHeight="635" />
+<SubTexture name="insane c00lkidd idle0002" x="629" y="1274" width="629" height="635" frameX="0" frameY="0" frameWidth="629" frameHeight="635" />
+<SubTexture name="insane c00lkidd idle0003" x="1258" y="1274" width="629" height="635" frameX="0" frameY="0" frameWidth="629" frameHeight="635" />
+<SubTexture name="insane c00lkidd idle0004" x="629" y="1274" width="629" height="635" frameX="0" frameY="0" frameWidth="629" frameHeight="635" />
+<SubTexture name="insane c00lkidd idle0005" x="0" y="1274" width="629" height="635" frameX="0" frameY="0" frameWidth="629" frameHeight="635" />
+<SubTexture name="insane c00lkidd left0000" x="2184" y="0" width="629" height="635" frameX="0" frameY="0" frameWidth="629" frameHeight="635" />
+<SubTexture name="insane c00lkidd left0001" x="2184" y="635" width="629" height="635" frameX="0" frameY="0" frameWidth="629" frameHeight="635" />
+<SubTexture name="insane c00lkidd left0002" x="2184" y="1270" width="629" height="635" frameX="0" frameY="0" frameWidth="629" frameHeight="635" />
+<SubTexture name="insane c00lkidd left0003" x="0" y="1909" width="629" height="635" frameX="0" frameY="0" frameWidth="629" frameHeight="635" />
+<SubTexture name="insane c00lkidd left0004" x="629" y="1909" width="629" height="635" frameX="0" frameY="0" frameWidth="629" frameHeight="635" />
+<SubTexture name="insane c00lkidd down0000" x="1258" y="1909" width="629" height="635" frameX="0" frameY="0" frameWidth="629" frameHeight="635" />
+<SubTexture name="insane c00lkidd down0001" x="1887" y="1909" width="629" height="635" frameX="0" frameY="0" frameWidth="629" frameHeight="635" />
+<SubTexture name="insane c00lkidd down0002" x="2813" y="0" width="629" height="635" frameX="0" frameY="0" frameWidth="629" frameHeight="635" />
+<SubTexture name="insane c00lkidd down0003" x="2813" y="635" width="629" height="635" frameX="0" frameY="0" frameWidth="629" frameHeight="635" />
+<SubTexture name="insane c00lkidd up0000" x="2813" y="1270" width="629" height="635" frameX="0" frameY="0" frameWidth="629" frameHeight="635" />
+<SubTexture name="insane c00lkidd up0001" x="2813" y="1905" width="629" height="635" frameX="0" frameY="0" frameWidth="629" frameHeight="635" />
+<SubTexture name="insane c00lkidd up0002" x="0" y="2544" width="629" height="635" frameX="0" frameY="0" frameWidth="629" frameHeight="635" />
+<SubTexture name="insane c00lkidd up0003" x="629" y="2544" width="629" height="635" frameX="0" frameY="0" frameWidth="629" frameHeight="635" />
+<SubTexture name="insane c00lkidd right0000" x="1258" y="2544" width="629" height="635" frameX="0" frameY="0" frameWidth="629" frameHeight="635" />
+<SubTexture name="insane c00lkidd right0001" x="1887" y="2544" width="629" height="635" frameX="0" frameY="0" frameWidth="629" frameHeight="635" />
+<SubTexture name="insane c00lkidd right0002" x="2516" y="2544" width="629" height="635" frameX="0" frameY="0" frameWidth="629" frameHeight="635" />
+<SubTexture name="insane c00lkidd right0003" x="1887" y="2544" width="629" height="635" frameX="0" frameY="0" frameWidth="629" frameHeight="635" />
+<SubTexture name="insane c00lkidd slash0000" x="0" y="0" width="728" height="637" frameX="0" frameY="0" frameWidth="728" frameHeight="637" />
+<SubTexture name="insane c00lkidd slash0001" x="728" y="0" width="728" height="637" frameX="0" frameY="0" frameWidth="728" frameHeight="637" />
+<SubTexture name="insane c00lkidd slash0002" x="0" y="637" width="728" height="637" frameX="0" frameY="0" frameWidth="728" frameHeight="637" />
+<SubTexture name="insane c00lkidd slash0003" x="728" y="637" width="728" height="637" frameX="0" frameY="0" frameWidth="728" frameHeight="637" />
+<SubTexture name="insane c00lkidd slash0004" x="1456" y="0" width="728" height="637" frameX="0" frameY="0" frameWidth="728" frameHeight="637" />
+</TextureAtlas>

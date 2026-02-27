@@ -1,0 +1,55 @@
+{
+	"animations": [
+		{
+			"offsets": [-23, 9],
+			"indices": [],
+			"fps": 24,
+			"anim": "idle",
+			"loop": false,
+			"name": "john doe2 idle"
+		},
+		{
+			"offsets": [-23, 10],
+			"indices": [],
+			"fps": 24,
+			"anim": "singLEFT",
+			"loop": false,
+			"name": "john doe2 left"
+		},
+		{
+			"offsets": [-23, 4],
+			"indices": [],
+			"fps": 24,
+			"anim": "singDOWN",
+			"loop": false,
+			"name": "john doe2 down"
+		},
+		{
+			"offsets": [-24, 8],
+			"indices": [],
+			"fps": 24,
+			"anim": "singUP",
+			"loop": false,
+			"name": "john doe2 up"
+		},
+		{
+			"offsets": [-28, 9],
+			"indices": [],
+			"fps": 24,
+			"anim": "singRIGHT",
+			"loop": false,
+			"name": "john doe2 right"
+		}
+	],
+	"vocals_file": "",
+	"no_antialiasing": false,
+	"image": "characters/john doe2",
+	"position": [-230, 170],
+	"healthicon": "john2",
+	"flip_x": false,
+	"healthbar_colors": [253, 255, 136],
+	"camera_position": [0, 0],
+	"sing_duration": 6.1,
+	"scale": 1,
+	"_editor_isPlayer": false
+}
