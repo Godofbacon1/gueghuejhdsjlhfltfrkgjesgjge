@@ -251,8 +251,6 @@ class MainMenuState extends MusicBeatState
 
 		if (FlxG.mouse.x > (FlxG.width / 2)) MenuCharSprite.flipX = false; else MenuCharSprite.flipX = true;
 
-		if (FlxG.mouse.cursor.bitmapData.compare(Paths.image("RobloxCursor").bitmap) < 0) FlxG.mouse.load(Paths.image("RobloxCursor").bitmap);
-
 		//Debug Shit
 		#if (!final)
 		if (FlxG.keys.justPressed.T)
@@ -290,12 +288,6 @@ class MainMenuState extends MusicBeatState
 		*/
 		if (!selectedSomethin)
 		{
-			if (controls.UI_UP_P)
-				changeItem(-1);
-
-			if (controls.UI_DOWN_P)
-				changeItem(1);
-
 			var allowMouse:Bool = allowMouse;
 			if (allowMouse && ((FlxG.mouse.deltaScreenX != 0 && FlxG.mouse.deltaScreenY != 0) || FlxG.mouse.justPressed)) //FlxG.mouse.deltaScreenX/Y checks is more accurate than FlxG.mouse.justMoved
 			{
@@ -364,6 +356,12 @@ class MainMenuState extends MusicBeatState
 				timeNotMoving += elapsed;
 				if(timeNotMoving > 2) FlxG.mouse.visible = false;
 			}
+			/*
+			if (controls.UI_UP_P)
+				changeItem(-1);
+
+			if (controls.UI_DOWN_P)
+				changeItem(1);
 
 			switch(curColumn)
 			{
@@ -374,7 +372,6 @@ class MainMenuState extends MusicBeatState
 						curColumn = LEFT;
 						changeItem();
 					}
-					*/
 					if(controls.UI_RIGHT_P && rightOption != null)
 					{
 						curColumn = RIGHT;
@@ -397,7 +394,7 @@ class MainMenuState extends MusicBeatState
 						changeItem();
 					}
 			}
-
+			*/
 			if (controls.ACCEPT || (FlxG.mouse.justPressed && allowMouse))
 			{
 				FlxG.sound.play(Paths.sound('confirmMenu'));

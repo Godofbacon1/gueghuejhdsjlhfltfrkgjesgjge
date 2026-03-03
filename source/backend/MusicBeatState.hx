@@ -31,6 +31,8 @@ class MusicBeatState extends FlxState
 
 		if(!_psychCameraInitialized) initPsychCamera();
 
+		FlxG.mouse.load(Paths.image("RobloxCursor").bitmap);
+
 		super.create();
 
 		if(!skip) {

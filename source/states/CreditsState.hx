@@ -1,5 +1,7 @@
 package states;
 
+import flixel.addons.effects.chainable.FlxEffectSprite;
+import flixel.addons.effects.chainable.FlxOutlineEffect;
 import objects.AttachedSprite;
 
 class CreditsState extends MusicBeatState
@@ -48,7 +50,7 @@ class CreditsState extends MusicBeatState
 			["Meero",               "Kaisor",           "The Head of Terminal And Coder",						"https://www.youtube.com/@mk_meero",	"0000FF"],
 			["AFKBo",               "furry",			"Head Artist + The Goat",								"https://www.youtube.com/@afkbo",		"0000FF"],
 			["miniyaht",			"noob",				"UI Artist",											"https://comic.studio/u/MiniYaht",		"0000FF"],
-			["jamie",               "computer",         "Bg Artist + UI",										"https://www.youtube.com/@kazuk.i",		"0000FF"],
+			//["jamie",               "computer",         "Bg Artist + UI",										"https://www.youtube.com/@kazuk.i",		"0000FF"],
 			["Clover",              "bacon",			"Good Ol' Voice Actor",								"https://www.youtube.com/@double-sonic",	"0000FF"],
 			["harley",              "sanic",			"Goofy ahh charter",			"https://www.tiktok.com/@fw.harleyyy?_t=ZN-8yJavFpWcf0&_r=1",	"0000FF"],
 			["MilkGod",             "milk",				"Bg Artist",										"https://www.youtube.com/@mk_meero",		"0000FF"],
@@ -125,8 +127,13 @@ class CreditsState extends MusicBeatState
 				sectionIndex++;
 
 				for (letter in optionText.letters) {
-					var lettersColor = 255;
-					letter.setColorTransform(1, 1, 1, 1, lettersColor, lettersColor, lettersColor);
+					var lettersColor:Array<Array<Int>> = [
+						[232, 237, 142],//John DOUGH
+						[194, 31, 6],//c00lKedd
+						[117, 14, 14],//G6667
+						[7, 153, 0]//1x1x1x1x11xx11x1x1x1
+					];
+					letter.setColorTransform(1, 1, 1, 1, lettersColor[Column][0], lettersColor[Column][1], lettersColor[Column][2]);
 				}
 
 				////

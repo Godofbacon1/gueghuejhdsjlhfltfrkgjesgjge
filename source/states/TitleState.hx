@@ -99,7 +99,6 @@ class TitleState extends MusicBeatState
 		}
 
 		FlxG.mouse.visible = false;
-		FlxG.mouse.load(Paths.image("RobloxCursor").bitmap);
 		#if FREEPLAY
 		MusicBeatState.switchState(new FreeplayState());
 		#elseif CHARTING
