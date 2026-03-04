@@ -2,7 +2,6 @@
 
 name: Build
 
-
 # Controls when the action will run.
 on:
   # Triggers the workflow on push or pull request events but only for the master branch
@@ -49,6 +48,17 @@ jobs:
         with:
           name: linuxBuild
           path: 'export/release/linux/bin'
+      - name: Create Linux Release
+        uses: softprops/action-gh-release@v2
+        if: github.event_name != 'pull_request'
+        with:
+          tag_name: linux-${{ github.run_id }}
+          name: Linux Build ${{ github.run_id }}
+          files: 'export/release/linux/bin/*'
+          draft: false
+          prerelease: true
+          generate_release_notes: true
+
   buildWindows:
     runs-on: windows-latest
 
@@ -78,6 +88,17 @@ jobs:
         with:
           name: windowsBuild
           path: export/release/windows/bin
+      - name: Create Windows Release
+        uses: softprops/action-gh-release@v2
+        if: github.event_name != 'pull_request'
+        with:
+          tag_name: windows-${{ github.run_id }}
+          name: Windows Build ${{ github.run_id }}
+          files: 'export/release/windows/bin/*'
+          draft: false
+          prerelease: true
+          generate_release_notes: true
+
   buildMac:
     runs-on: macos-15
 
@@ -106,3 +127,13 @@ jobs:
         with:
           name: macBuild
           path: export/release/macos/bin
+      - name: Create Mac Release
+        uses: softprops/action-gh-release@v2
+        if: github.event_name != 'pull_request'
+        with:
+          tag_name: mac-${{ github.run_id }}
+          name: Mac Build ${{ github.run_id }}
+          files: 'export/release/macos/bin/*'
+          draft: false
+          prerelease: true
+          generate_release_notes: true
