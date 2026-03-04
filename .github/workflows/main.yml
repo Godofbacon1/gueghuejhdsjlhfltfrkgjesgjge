@@ -135,12 +135,6 @@ jobs:
         with:
           name: windowsBuild
           path: all-builds
-      
-      - name: Download Mac Build ZIP
-        uses: actions/download-artifact@v4
-        with:
-          name: macBuild
-          path: all-builds
 
       # Create the single comprehensive release - simple run_id tag
       - name: Create Complete Multi-Platform Release
