@@ -116,7 +116,7 @@ jobs:
 
   release-all:
     # Waits for all builds to complete
-    needs: [buildLinux, buildWindows, buildMac]
+    needs: [buildLinux, buildWindows]
     runs-on: ubuntu-latest
     permissions:
       contents: write  # Required to create releases and tags
@@ -141,21 +141,15 @@ jobs:
         with:
           name: macBuild
           path: all-builds
-      
-      # Create ONE master ZIP with date - NO VSCode warnings!
-      - name: Create Master Multi-Platform ZIP
-        run: |
-          cd all-builds
-          DATE=$(date +%m/%d/%Y)
-          zip -r "../TFD ${DATE}.zip" .
-      
+
       # Create the single comprehensive release - simple run_id tag
       - name: Create Complete Multi-Platform Release
         uses: softprops/action-gh-release@v2
         with:
           tag_name: v${{ github.run_id }}
           name: TerFuUpd $(date +%m/%d/%Y)
-          files: TFD $(date +%m/%d/%Y).zip
+          files: |
+            all-artifacts/**
           draft: false
           prerelease: true
           generate_release_notes: true
