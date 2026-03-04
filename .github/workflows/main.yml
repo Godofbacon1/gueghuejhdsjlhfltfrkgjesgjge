@@ -116,7 +116,7 @@ jobs:
 
   release-all:
     # Waits for all builds to complete
-    needs: [buildLinux, buildWindows]
+    needs: [buildLinux]
     runs-on: ubuntu-latest
     permissions:
       contents: write  # Required to create releases and tags
@@ -141,9 +141,9 @@ jobs:
         uses: softprops/action-gh-release@v2
         with:
           tag_name: v${{ github.run_id }}
-          name: TerFuUpd $(date +%m/%d/%Y)
+          name: TerFuUpd
           files: |
-            all-artifacts/**
+            all-builds/**
           draft: false
           prerelease: true
           generate_release_notes: true
