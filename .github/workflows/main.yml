@@ -125,19 +125,19 @@ jobs:
     steps:
       # Download all 3 ZIP artifacts directly
       - name: Download Linux Build ZIP
-        uses: actions/download-artifact@v4.3.4
+        uses: actions/download-artifact@v4
         with:
           name: linuxBuild
           path: all-builds
       
       - name: Download Windows Build ZIP
-        uses: actions/download-artifact@v4.3.4
+        uses: actions/download-artifact@v4
         with:
           name: windowsBuild
           path: all-builds
       
       - name: Download Mac Build ZIP
-        uses: actions/download-artifact@v4.3.4
+        uses: actions/download-artifact@v4
         with:
           name: macBuild
           path: all-builds
