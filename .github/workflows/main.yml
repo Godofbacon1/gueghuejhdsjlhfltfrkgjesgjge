@@ -50,16 +50,6 @@ jobs:
         with:
           name: linuxBuild
           path: 'export/release/linux/bin'
-      - name: Create Linux Release
-        uses: softprops/action-gh-release@v2
-        if: github.event_name != 'pull_request'
-        with:
-          tag_name: linux-${{ github.run_id }}
-          name: Linux Build ${{ github.run_id }}
-          files: 'export/release/linux/bin/*'
-          draft: false
-          prerelease: true
-          generate_release_notes: true
 
   buildWindows:
     runs-on: windows-latest
@@ -92,16 +82,6 @@ jobs:
         with:
           name: windowsBuild
           path: export/release/windows/bin
-      - name: Create Windows Release
-        uses: softprops/action-gh-release@v2
-        if: github.event_name != 'pull_request'
-        with:
-          tag_name: windows-${{ github.run_id }}
-          name: Windows Build ${{ github.run_id }}
-          files: 'export/release/windows/bin/*'
-          draft: false
-          prerelease: true
-          generate_release_notes: true
 
   buildMac:
     runs-on: macos-15
@@ -127,19 +107,55 @@ jobs:
       - name: Create Version Tag
         run: echo "${{github.run_id}}" > VERSION
       - name: Compile
-        run: haxelib run lime build mac --app-version="4.0.0-${{ github.run_id}}"  -D officialBuild
+        run: haxelib run lime build mac --app-version="4.0.0-${{ github.run_id }}"  -D officialBuild
       - name: Publish Artifact
         uses: actions/upload-artifact@v4.3.4
         with:
           name: macBuild
           path: export/release/macos/bin
-      - name: Create Mac Release
-        uses: softprops/action-gh-release@v2
-        if: github.event_name != 'pull_request'
+
+  release-all:
+    # Waits for all builds to complete
+    needs: [buildLinux, buildWindows, buildMac]
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write  # Required to create releases and tags
+    if: github.event_name != 'pull_request'
+
+    steps:
+      # Download all 3 ZIP artifacts directly
+      - name: Download Linux Build ZIP
+        uses: actions/download-artifact@v4.3.4
         with:
-          tag_name: mac-${{ github.run_id }}
-          name: Mac Build ${{ github.run_id }}
-          files: 'export/release/macos/bin/*'
+          name: linuxBuild
+          path: all-builds
+      
+      - name: Download Windows Build ZIP
+        uses: actions/download-artifact@v4.3.4
+        with:
+          name: windowsBuild
+          path: all-builds
+      
+      - name: Download Mac Build ZIP
+        uses: actions/download-artifact@v4.3.4
+        with:
+          name: macBuild
+          path: all-builds
+      
+      # Create ONE master ZIP with date - NO VSCode warnings!
+      - name: Create Master Multi-Platform ZIP
+        run: |
+          cd all-builds
+          DATE=$(date +%m/%d/%Y)
+          zip -r "../TFD ${DATE}.zip" .
+      
+      # Create the single comprehensive release - simple run_id tag
+      - name: Create Complete Multi-Platform Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: v${{ github.run_id }}
+          name: TerFuUpd $(date +%m/%d/%Y)
+          files: TFD $(date +%m/%d/%Y).zip
           draft: false
           prerelease: true
           generate_release_notes: true
