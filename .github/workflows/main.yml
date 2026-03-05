@@ -147,9 +147,11 @@ jobs:
           cd ../windows-bin && zip -r ../windows-release.zip .
           cd ../mac-bin && zip -r ../mac-release.zip .
 
-      - name: Date Check
-        run: echo "DATE=$(date +'%d-%m-%Y')" >> $GITHUB_ENV
-      
+      - name: Set commit date
+        run: |
+          COMMIT_DATE=$(git log -1 --format='%cd' --date=format:'%d-%m-%Y')
+          echo "DATE=$COMMIT_DATE" >> $GITHUB_ENV
+
       # Create the multi-platform release
       - name: Create Complete Multi-Platform Release
         uses: softprops/action-gh-release@v2
