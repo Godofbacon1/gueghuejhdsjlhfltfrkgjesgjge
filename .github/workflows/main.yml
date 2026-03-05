@@ -115,28 +115,48 @@ jobs:
           path: export/release/macos/bin
 
   release-all:
-    needs: [buildLinux]
+    needs: [buildLinux, buildWindows, buildMac]
     runs-on: ubuntu-latest
     permissions:
       contents: write
     if: github.event_name != 'pull_request'
     steps:
-      - uses: actions/download-artifact@v4
+      # Download all three artifacts
+      - name: Download Linux Build
+        uses: actions/download-artifact@v4
         with:
           name: linuxBuild
           path: linux-bin
       
-      - name: Create Single ZIP
-        run: |
-          cd linux-bin
-          zip -r ../linux-release.zip .
+      - name: Download Windows Build  
+        uses: actions/download-artifact@v4
+        with:
+          name: windowsBuild
+          path: windows-bin
       
-      - name: Create/Update Release
+      - name: Download Mac Build
+        uses: actions/download-artifact@v4
+        with:
+          name: macBuild
+          path: mac-bin
+      
+      # Create single ZIP for each platform
+      - name: Create Platform ZIPs
+        run: |
+          cd linux-bin && zip -r ../linux-release.zip .
+          cd ../windows-bin && zip -r ../windows-release.zip .
+          cd ../mac-bin && zip -r ../mac-release.zip .
+      
+      # Create the multi-platform release
+      - name: Create Complete Multi-Platform Release
         uses: softprops/action-gh-release@v2
         with:
           tag_name: continuous-${{ github.run_id }}
-          name: TerFu Linux Build #${{ github.run_id }}
-          files: linux-release.zip
+          name: "TerFuUpd #${{ github.run_number }}"
+          files: |
+            linux-release.zip
+            windows-release.zip
+            mac-release.zip
           draft: false
           prerelease: true
           generate_release_notes: true
