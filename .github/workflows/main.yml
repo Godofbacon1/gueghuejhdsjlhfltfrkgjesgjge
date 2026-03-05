@@ -146,13 +146,16 @@ jobs:
           cd linux-bin && zip -r ../linux-release.zip .
           cd ../windows-bin && zip -r ../windows-release.zip .
           cd ../mac-bin && zip -r ../mac-release.zip .
+
+      - name: Date Check
+        run: echo "DATE=$(date +'%d-%m-%Y')" >> $GITHUB_ENV
       
       # Create the multi-platform release
       - name: Create Complete Multi-Platform Release
         uses: softprops/action-gh-release@v2
         with:
           tag_name: continuous-${{ github.run_id }}
-          name: "TerFuUpd #${{ github.run_number }}"
+          name: "TerFuUpd #${{ env.DATE }}"
           files: |
             linux-release.zip
             windows-release.zip
