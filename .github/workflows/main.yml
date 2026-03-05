@@ -121,18 +121,22 @@ jobs:
       contents: write
     if: github.event_name != 'pull_request'
     steps:
-      - name: Download Linux Build ZIP
-        uses: actions/download-artifact@v4
+      - uses: actions/download-artifact@v4
         with:
           name: linuxBuild
-          path: all-builds
-      - name: Create Complete Release
+          path: linux-bin
+      
+      - name: Create Single ZIP
+        run: |
+          cd linux-bin
+          zip -r ../linux-release.zip .
+      
+      - name: Create/Update Release
         uses: softprops/action-gh-release@v2
         with:
-          tag_name: v${{ github.run_id }}
-          name: TerFuUpd
-          files: |
-            all-builds/**
+          tag_name: continuous-${{ github.run_id }}
+          name: TerFu Linux Build #${{ github.run_id }}
+          files: linux-release.zip
           draft: false
           prerelease: true
           generate_release_notes: true
