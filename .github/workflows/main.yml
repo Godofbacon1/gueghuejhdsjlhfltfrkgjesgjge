@@ -114,29 +114,25 @@ jobs:
           name: macBuild
           path: export/release/macos/bin
 
-release-all:
-  needs: [buildLinux]  # Keep Linux-only
-  runs-on: ubuntu-latest
-  if: github.event_name != 'pull_request'
-  permissions:
-    contents: write
-  steps:
-    - uses: actions/download-artifact@v4
-      with:
-        name: linuxBuild
-        path: release-files  # Simple flat path
-        
-    - name: Debug - List files  # ADD THIS to see what's actually there
-      run: find release-files -type f -ls
-      
-    - name: Create Release
-      uses: softprops/action-gh-release@v2
-      with:
-        tag_name: v${{ github.run_id }}
-        name: TerFuUpd - Linux
-        files: |
-          release-files/**
-        draft: false
-        prerelease: true
-        generate_release_notes: true
-
+  release-all:
+    needs: [buildLinux]
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    if: github.event_name != 'pull_request'
+    steps:
+      - name: Download Linux Build ZIP
+        uses: actions/download-artifact@v4
+        with:
+          name: linuxBuild
+          path: all-builds
+      - name: Create Complete Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: v${{ github.run_id }}
+          name: TerFuUpd
+          files: |
+            all-builds/**
+          draft: false
+          prerelease: true
+          generate_release_notes: true
