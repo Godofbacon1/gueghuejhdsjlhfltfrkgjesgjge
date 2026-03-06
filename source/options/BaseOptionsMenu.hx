@@ -23,7 +23,7 @@ class BaseOptionsMenu extends MusicBeatSubstate
 	private var hcolors:Array<Array<Int>> = [ //its gay ik
 		[255, 255, 153], //john DOUGH
 		[255, 0, 0], //c00lkidd
-		[139, 69, 19], //tubers
+		[117, 14, 14], //g67676767667
 		[50, 205, 50] //1x1x1x1x1x1x1x1x1x1x1x1
 	];
 	private var gayshit:Float = 0;
