@@ -276,7 +276,7 @@ class Note extends FlxSprite
 				animToPlay = colArray[noteData % colArray.length];
 				animation.play(animToPlay + 'Scroll');
 			}
-
+			/*
 			switch(StageData.getStageFile(PlayState.curStage).directory) {
 				case 'weekdoe':
 					set_texture('noteSkins/March');
@@ -285,7 +285,7 @@ class Note extends FlxSprite
 				default:
 					set_texture('');
 			}
-
+			*/
 			this.rgbShader.enabled = true;
 			this.defaultRGB();
 		}

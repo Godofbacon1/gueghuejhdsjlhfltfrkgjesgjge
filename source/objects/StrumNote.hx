@@ -72,7 +72,7 @@ class StrumNote extends FlxSprite
 
 		var customSkin:String = skin + Note.getNoteSkinPostfix();
 		if(Paths.fileExists('images/$customSkin.png', IMAGE)) skin = customSkin;
-
+		/*
 		switch(StageData.getStageFile(PlayState.curStage).directory) {
 			case 'weekdoe':
 				set_texture('noteSkins/March');
@@ -81,7 +81,8 @@ class StrumNote extends FlxSprite
 			default:
 				set_texture(skin);
 		}
-		//texture = skin; //Load texture and anims
+		*/
+		texture = skin; //Load texture and anims
 		playAnim('static');
 
 	}

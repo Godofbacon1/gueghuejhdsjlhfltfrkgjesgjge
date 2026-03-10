@@ -2,7 +2,7 @@
 <!--
 Created with Funkin Packer v0.1.3 https://neeeoo.github.io/funkin-packer/
 -->
-<TextureAtlas imagePath="NOTE_assets.png" width="763" height="758">
+<TextureAtlas imagePath="NOTE_assets-doe.png" width="763" height="758">
 	<SubTexture name="arrowDOWN0000" x="448" y="1" width="157" height="154" frameX="-0" frameY="-0" frameWidth="157" frameHeight="154"/>
 	<SubTexture name="arrowLEFT0000" x="451" y="158" width="154" height="157" frameX="-0" frameY="-0" frameWidth="154" frameHeight="157"/>
 	<SubTexture name="arrowRIGHT0000" x="451" y="318" width="154" height="157" frameX="-0" frameY="-0" frameWidth="154" frameHeight="157"/>

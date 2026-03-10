@@ -335,6 +335,7 @@ class PlayState extends MusicBeatState
 
 		startCallback = startCountdown;
 		endCallback = endSong;
+
 		/*
 		if (dadGroup.x != null && boyfriendGroup.x != null) {
 			OP = [
@@ -614,6 +615,12 @@ class PlayState extends MusicBeatState
 		startCharacterScripts(dad.curCharacter);
 		startCharacterScripts(boyfriend.curCharacter);
 		#end
+
+		var dirpref:String = "NOTE_assets-" + StageData.getStageFile(curStage).directory.replace("week", "");
+
+		trace(dirpref);
+
+		if (Paths.fileExists('images/noteSkins/$dirpref.png', IMAGE)) SONG.arrowSkin = 'noteSkins/$dirpref'; else SONG.arrowSkin = null;
 
 		uiGroup = new FlxSpriteGroup();
 		comboGroup = new FlxSpriteGroup();
